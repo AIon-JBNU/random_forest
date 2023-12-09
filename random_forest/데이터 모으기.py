@@ -2,10 +2,10 @@ import os
 import pandas as pd
 
 # 입력 CSV 파일들이 있는 디렉토리 경로
-input_directory = r"C:\Users\nahcooy\PycharmProjects\pythonProject\random_forest\mandarin"
+input_directory = r"C:\Users\nahcooy\PycharmProjects\pythonProject\random_forest\banana"
 
 # 결과 CSV 파일 경로
-output_file = ('random_forest_data.csv')
+output_file = ('banana_total.csv')
 
 # CSV 파일 목록을 저장할 리스트 생성
 csv_files = []
@@ -18,6 +18,7 @@ for filename in os.listdir(input_directory):
 
 # 파일명을 가지고 정렬
 csv_files.sort()
+print(csv_files)
 
 # 결과를 저장할 빈 DataFrame 생성
 result_df = pd.DataFrame()

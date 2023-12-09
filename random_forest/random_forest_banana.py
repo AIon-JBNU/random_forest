@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 import joblib
 
 # 데이터셋 불러오기 (예: dataset.csv)
-data = pd.read_csv('random_forest_data_banana.csv')
+data = pd.read_csv('banana_total.csv')
 
 # 입력 특성과 타겟 변수 분리
 X = data[['MQ-2', 'MQ-3', 'MQ-136', 'MQ-137']]  # 입력 특성 선택

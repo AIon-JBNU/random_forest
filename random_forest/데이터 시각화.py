@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # 실제 CSV 파일 경로와 이름으로 수정
-csv_file_path = r"C:\Users\nahcooy\PycharmProjects\pythonProject\random_forest\random_forest_data.csv"
+csv_file_path = r"C:\Users\nahcooy\PycharmProjects\pythonProject\random_forest\banana_total.csv"
 
 # CSV 파일 읽기
 df = pd.read_csv(csv_file_path)
