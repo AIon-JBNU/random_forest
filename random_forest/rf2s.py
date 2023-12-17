@@ -40,9 +40,15 @@ def main():
             prediction = loaded_model.predict(new_data)
 
         elif fruit_name == '감': # 감
-            pass
+            model_filename = 'random_forest_model_gam.joblib'
+            loaded_model = joblib.load(model_filename)
+            new_data = pd.DataFrame({'MQ-2': [mq_2], 'MQ-3': [mq_3], 'MQ-136': [mq_136], 'MQ-137': [mq_137]})
+            prediction = loaded_model.predict(new_data)
         else: # 사과
-            pass
+            model_filename = 'random_forest_model_apple.joblib'
+            loaded_model = joblib.load(model_filename)
+            new_data = pd.DataFrame({'MQ-2': [mq_2], 'MQ-3': [mq_3], 'MQ-136': [mq_136], 'MQ-137': [mq_137]})
+            prediction = loaded_model.predict(new_data)
         post(fruit_name, prediction)
 
 
